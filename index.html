@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        background-image: url(https://www.shutterstock.com/image-photo/blur-bokeh-background-interior-table-600nw-2289795537.jpg);
+        background-size: 100%;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container{
+        display: flex;
+        background-color: rgba(247, 238, 117, 0.664) ;
+        padding: 10px 20px;
+        border-radius: 15px;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0 10px 50px black;
+        justify-content: center;
+        width: 400px;
+    }
+    h2{
+        color: rgb(127, 10, 237);
+    }
+    
+
+    button {
+        background-color: rgb(184, 29, 223);
+        color: white;
+        font-size: 17px;
+        border-radius: 12px;
+        border: none;
+        cursor: pointer;
+        margin-top: 12px;
+        padding: 10px 20px;
+        }
+        
+        input{
+                padding: 5px;
+                color: rgb(27, 26, 26);
+                margin: 10px auto;
+                margin-left: 5px;
+                font-size: 15px;    
+            }
+                    
+    </style>
+<body>
+        <div class ="container">
+        <h2> Welcome to Canteen </h2>
+        <h3> Here is our Menu </h3>
+        <label for="idli">Idli : Rs.20 <input type="number" min="0" id="Idli" value="0"</label><br>
+        <label for="Pulav">Pulav : Rs.35 <input type="number" min="0" id="Pulav" value="0"</label><br>
+        <label for="Poori">Poori : Rs.40 <input type="number" min="0" id="Poori" value="0"</label><br>
+        <label for="Dosa">Dosa : Rs.60 <input type="number" min="0" id="Dosa" value="0"</label><br>
+        <label for="Coffe">Coffe : Rs.20 <input type="number" min="0" id="Coffe" value="0"</label><br>
+        <button onclick="bill()"> Total </button>
+        <p id="total"> Your Total Amount is: </p>
+        
+    </div>
+    <script src="food.js"></script>
+</body>
+</html>
